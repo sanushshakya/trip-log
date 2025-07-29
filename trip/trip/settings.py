@@ -8,18 +8,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-l*s2&&js+xt-z)f%a^2%+a$m$n#ttb1)@f^8b69-okb@%3ia)2"
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "localhost:3000", "trip-log-wkkv.onrender.com", "0.0.0.0"]
+ALLOWED_HOSTS = ["localhost", "localhost:3000", "trip-log-wkkv.onrender.com", "0.0.0.0", "trip-log-fe.vercel.app"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
-    "https://trip-log-wkkv.onrender.com"
+    "https://trip-log-wkkv.onrender.com",
+    "https://trip-log-fe.vercel.app/",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://trip-log-wkkv.onrender.com', 'https://localhost:3000']
+CSRF_TRUSTED_ORIGINS = ['https://trip-log-wkkv.onrender.com', 'https://localhost:3000', "https://trip-log-fe.vercel.app/"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
