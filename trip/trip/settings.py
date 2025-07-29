@@ -10,10 +10,13 @@ SECRET_KEY = "django-insecure-l*s2&&js+xt-z)f%a^2%+a$m$n#ttb1)@f^8b69-okb@%3ia)2
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "localhost:3000"]
+ALLOWED_HOSTS = ["localhost", "localhost:3000", "trip-log-wkkv.onrender.com"]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
+    "trip-log-wkkv.onrender.com"
 ]
+
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
 
@@ -105,13 +108,10 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
