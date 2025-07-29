@@ -14,7 +14,7 @@ ALLOWED_HOSTS = ["localhost", "localhost:3000", "trip-log-wkkv.onrender.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
-    "trip-log-wkkv.onrender.com"
+    "https://trip-log-wkkv.onrender.com"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
