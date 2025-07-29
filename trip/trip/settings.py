@@ -14,12 +14,12 @@ ALLOWED_HOSTS = ["localhost", "trip-log-wkkv.onrender.com", "127.0.0.1"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
-    "https://trip-log-fe.vercel.app/",
+    "https://trip-log-fe.vercel.app",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://trip-log-wkkv.onrender.com', 'https://localhost:3000', "https://trip-log-fe.vercel.app/"]
+CSRF_TRUSTED_ORIGINS = ['https://trip-log-wkkv.onrender.com', 'https://localhost:3000', "https://trip-log-fe.vercel.app"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
