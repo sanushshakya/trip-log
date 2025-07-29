@@ -10,11 +10,10 @@ SECRET_KEY = "django-insecure-l*s2&&js+xt-z)f%a^2%+a$m$n#ttb1)@f^8b69-okb@%3ia)2
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "localhost:3000", "trip-log-wkkv.onrender.com", "0.0.0.0", "trip-log-fe.vercel.app"]
+ALLOWED_HOSTS = ["localhost", "trip-log-wkkv.onrender.com", "127.0.0.1"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
-    "https://trip-log-wkkv.onrender.com",
     "https://trip-log-fe.vercel.app/",
 ]
 
